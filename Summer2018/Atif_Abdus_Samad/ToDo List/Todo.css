@@ -1,0 +1,113 @@
+body{
+
+    background-color: #57bc90;
+
+}
+
+h1{
+    text-align: center;
+    color: white;
+    background-color: #015249;
+    height: 60px;
+
+}
+
+#top-container{
+    width: 100%;
+    height:40px ;
+}
+
+#inp{
+    width: 80%;
+    height: 90%;
+    font-size: x-large;
+
+}
+
+#btn{
+    width: 7%;
+    margin-left: 3%;
+    height: 100%;
+    background-color: #77C9D4;
+    color: white;
+    border-radius: 5%;
+}
+
+#cls{
+    width: 7%;
+    margin-left: 2%;
+    height: 100%;
+    background-color: #77C9D4;
+    color: white;
+    border-radius: 5%;
+
+}
+
+table{
+    margin-top: 40px;
+    width: 80%;
+}
+
+tr{
+    font-size: xx-large;
+    font-family: "Adobe Gothic Std B";
+    height: 50px;
+}
+
+
+tbody tr {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #f7c331;
+
+    transition: 0.2s;
+
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.texttobeupdated{
+    font-size: xx-large;
+    font-family: "Adobe Gothic Std B";
+    height: 50px;
+}
+
+tbody tr:nth-child(odd) {
+    background: #f78828;
+}
+
+/* Darker background-color on hover */
+tbody tr:hover {
+    background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+tbody tr.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+tbody tr.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.updateit,.closeit,.completed{
+    height: 50px;
+    alignment: right;
+    background-color: white;
+}
